@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RxJavaCrashCourse</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weather">Weather</string>
+    <string name="get_weather">Get Weather</string>
+    <string name="city">City</string>
+    <string name="forecast">Forecast</string>
+    <string name="no_forecast_to_display">No forecast to display</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="set_forecast_city">Set Forecast City</string>
+</resources>
