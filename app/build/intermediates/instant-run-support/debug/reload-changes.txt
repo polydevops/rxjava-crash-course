@@ -1,0 +1,5 @@
+CHANGED,/Users/uhth/dev/android/code/rxjava-crash-course/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/Users/uhth/dev/android/code/rxjava-crash-course/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/polydevops/rxjavacrashcourse/activity/MainActivity$override.class
+CHANGED,/Users/uhth/dev/android/code/rxjava-crash-course/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/polydevops/rxjavacrashcourse/weather/WeatherPresenter$1$override.class
+CHANGED,/Users/uhth/dev/android/code/rxjava-crash-course/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/polydevops/rxjavacrashcourse/weather/WeatherPresenter$override.class
+CHANGED,/Users/uhth/dev/android/code/rxjava-crash-course/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/polydevops/rxjavacrashcourse/webService/WebServiceManager$override.class
