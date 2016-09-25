@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 
 import com.polydevops.rxjavacrashcourse.R;
 import com.polydevops.rxjavacrashcourse.RxJavaCrashCourseApplication;
+import com.polydevops.rxjavacrashcourse.forecast.ForecastFragment;
+import com.polydevops.rxjavacrashcourse.router.FrontController;
 import com.polydevops.rxjavacrashcourse.view.IToolbar;
 import com.polydevops.rxjavacrashcourse.weather.WeatherFragment;
 
@@ -25,6 +27,7 @@ public class HomeFragment extends Fragment {
     public static final String TAG = "HomeFragment";
 
     private IToolbar toolbar;
+    private FrontController frontController;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -45,6 +48,12 @@ public class HomeFragment extends Fragment {
     }
 
     @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        frontController = RxJavaCrashCourseApplication.getFrontController();
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_home, container, false);
         ButterKnife.bind(this, view);
@@ -59,9 +68,14 @@ public class HomeFragment extends Fragment {
 
     @OnClick(R.id.btn_weather_example)
     protected void onWeatherExampleButtonPressed() {
-        RxJavaCrashCourseApplication
-                .getFrontController()
+        frontController
                 .showFragment(getActivity(), WeatherFragment.TAG, null, R.id.content_frame);
+    }
+
+    @OnClick(R.id.btn_forecast_example)
+    protected void onForecastExampleButtonPressed() {
+        frontController
+                .showFragment(getActivity(), ForecastFragment.TAG, null, R.id.content_frame);
     }
 
 }

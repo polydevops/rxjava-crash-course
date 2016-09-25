@@ -18,7 +18,7 @@ public class DbOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(WeatherTable.SQL_CREATE_TABLE);
+        db.execSQL(ForecastTable.SQL_CREATE_TABLE);
     }
 
     @Override

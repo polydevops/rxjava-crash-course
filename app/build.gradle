@@ -19,6 +19,7 @@ android {
         }
     }
     repositories {
+        // mavenCentral()
         maven {
             url 'http://lt00as80.opr.statefarm.org/artifactory/repo'
             credentials {

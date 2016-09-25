@@ -2,8 +2,10 @@ package com.polydevops.rxjavacrashcourse;
 
 import android.app.Application;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.preference.PreferenceManager;
 
+import com.polydevops.rxjavacrashcourse.database.DbOpenHelper;
 import com.polydevops.rxjavacrashcourse.router.FragmentMap;
 import com.polydevops.rxjavacrashcourse.router.FrontController;
 import com.polydevops.rxjavacrashcourse.webService.WebServiceManager;
@@ -16,6 +18,7 @@ public class RxJavaCrashCourseApplication extends Application {
     private static FrontController frontController;
     private static WebServiceManager webServiceManager;
     private static SharedPreferences sharedPreferences;
+    private static SQLiteOpenHelper sqLiteOpenHelper;
 
     @Override
     public void onCreate() {
@@ -23,6 +26,7 @@ public class RxJavaCrashCourseApplication extends Application {
         frontController = new FrontController(new FragmentMap());
         webServiceManager = new WebServiceManager();
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        sqLiteOpenHelper = new DbOpenHelper(this);
     }
 
     public static FrontController getFrontController() {
@@ -34,4 +38,8 @@ public class RxJavaCrashCourseApplication extends Application {
     }
 
     public static SharedPreferences getSharedPreferences() { return sharedPreferences; }
+
+    public static SQLiteOpenHelper getSQLiteOpenHelper() {
+        return sqLiteOpenHelper;
+    }
 }

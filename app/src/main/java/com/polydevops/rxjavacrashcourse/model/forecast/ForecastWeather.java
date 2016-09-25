@@ -1,8 +1,9 @@
 package com.polydevops.rxjavacrashcourse.model.forecast;
 
 import com.google.gson.annotations.SerializedName;
-import com.polydevops.rxjavacrashcourse.model.weather.Main;
 import com.polydevops.rxjavacrashcourse.model.weather.Weather;
+
+import java.util.List;
 
 /**
  * TODO: Add class header comment.
@@ -12,13 +13,19 @@ public class ForecastWeather {
     @SerializedName("dt")
     private long date;
 
-    private Main main;
+    private Temperature temp;
 
-    private Weather weather;
+    private double pressure;
 
-    public ForecastWeather(long date, Main main, Weather weather) {
+    private int humidity;
+
+    private List<Weather> weather;
+
+    public ForecastWeather(long date, Temperature temp, double pressure, int humidity, List<Weather> weather) {
         this.date = date;
-        this.main = main;
+        this.temp = temp;
+        this.pressure = pressure;
+        this.humidity = humidity;
         this.weather = weather;
     }
 
@@ -26,11 +33,19 @@ public class ForecastWeather {
         return date;
     }
 
-    public Main getMain() {
-        return main;
+    public Temperature getTemp() {
+        return temp;
+    }
+
+    public double getPressure() {
+        return pressure;
+    }
+
+    public int getHumidity() {
+        return humidity;
     }
 
     public Weather getWeather() {
-        return weather;
+        return (weather != null) ? weather.get(0) : null;
     }
 }

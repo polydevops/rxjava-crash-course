@@ -1,5 +1,6 @@
 package com.polydevops.rxjavacrashcourse.weather;
 
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 
 import com.polydevops.rxjavacrashcourse.R;
@@ -29,8 +30,15 @@ public class WeatherPresenter extends AbstractRxPresenter implements WeatherCont
 
     @Override
     public void onViewCreated() {
+        view.getToolbar().displayBackNav(true);
         view.getToolbar().setToolbarTitle(R.string.weather);
+
         getCompositeSubscription().add(view.setZipCodeTextWatcher());
+    }
+
+    @Override
+    public void onBackPressed(FragmentActivity activity) {
+        frontController.goBack(activity);
     }
 
     @Override

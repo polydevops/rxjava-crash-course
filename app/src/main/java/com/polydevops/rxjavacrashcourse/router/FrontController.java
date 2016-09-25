@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentManager;
+
+import java.util.List;
 
 /**
  * Provides navigation for application
@@ -33,12 +35,31 @@ public class FrontController {
         }
     }
 
-    public void showActivity(AppCompatActivity activity, Class activityClass, Bundle bundle) {
+    public void showActivity(FragmentActivity activity, Class activityClass, Bundle bundle) {
         final Intent intent = new Intent();
         intent.setClass(activity, activityClass);
         intent.putExtras(bundle);
 
         activity.startActivity(intent);
         activity.finish();
+    }
+
+    public void goBack(FragmentActivity activity) {
+        activity
+                .getSupportFragmentManager()
+                .popBackStack();
+    }
+
+    public Fragment getCurrentFragment(FragmentActivity activity) {
+        final FragmentManager fragmentManager = activity.getSupportFragmentManager();
+
+        final List<Fragment> fragments = fragmentManager.getFragments();
+
+        if (fragments != null && !fragments.isEmpty()) {
+            final int currentFragmentIndex = fragments.size() - 1;
+            return fragments.get(currentFragmentIndex);
+        } else {
+            return null;
+        }
     }
 }

@@ -15,7 +15,8 @@ public class ForecastResponse {
     @SerializedName("list")
     private List<ForecastWeather> forecast;
 
-    private int cod;
+    @SerializedName("cod")
+    private int code;
 
     public ForecastResponse(City location, List<ForecastWeather> forecast) {
         this.location = location;
@@ -31,6 +32,6 @@ public class ForecastResponse {
     }
 
     public int getCode() {
-        return cod;
+        return code;
     }
 }

@@ -11,4 +11,9 @@
     <string name="cancel">Cancel</string>
     <string name="ok">Ok</string>
     <string name="set_forecast_city">Set Forecast City</string>
+    <string name="forecast_not_refreshed">Forecast Not Refreshed</string>
+    <string name="forecast_refreshed">Forecast Refreshed</string>
+
+    <string name="displaying_forecast_for_location">Displaying forecast for: %1$s</string>
+    <string name="retrieving_forecast">Retrieving Forecast</string>
 </resources>

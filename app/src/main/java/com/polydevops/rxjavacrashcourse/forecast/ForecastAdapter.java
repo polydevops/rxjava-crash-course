@@ -51,8 +51,8 @@ public class ForecastAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
             final ForecastViewHolder forecastViewHolder = (ForecastViewHolder) holder;
             setDate(forecastViewHolder, weatherForecast.getDate());
-            setTemperature(forecastViewHolder, weatherForecast.getMain().getHumidity());
-            setHumidity(forecastViewHolder, weatherForecast.getMain().getHumidity());
+            setTemperature(forecastViewHolder, weatherForecast.getTemp().getMax());
+            setHumidity(forecastViewHolder, weatherForecast.getHumidity());
         }
     }
 

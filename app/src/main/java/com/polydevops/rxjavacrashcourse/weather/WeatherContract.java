@@ -1,5 +1,7 @@
 package com.polydevops.rxjavacrashcourse.weather;
 
+import android.support.v4.app.FragmentActivity;
+
 import com.polydevops.rxjavacrashcourse.model.weather.WeatherResponse;
 import com.polydevops.rxjavacrashcourse.rx.IRxPresenter;
 import com.polydevops.rxjavacrashcourse.view.IToolbar;
@@ -29,6 +31,7 @@ public interface WeatherContract {
 
     interface Presenter extends IRxPresenter {
         void onViewCreated();
+        void onBackPressed(FragmentActivity activity);
 
         void onCityTextChanged(final String zipCode);
         void getWeather(final String zipCode);

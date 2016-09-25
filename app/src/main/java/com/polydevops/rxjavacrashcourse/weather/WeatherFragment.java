@@ -17,8 +17,8 @@ import com.jakewharton.rxbinding.widget.TextViewAfterTextChangeEvent;
 import com.polydevops.rxjavacrashcourse.R;
 import com.polydevops.rxjavacrashcourse.RxJavaCrashCourseApplication;
 import com.polydevops.rxjavacrashcourse.router.FrontController;
+import com.polydevops.rxjavacrashcourse.view.IOnBackPressed;
 import com.polydevops.rxjavacrashcourse.view.IToolbar;
-import com.polydevops.rxjavacrashcourse.webService.WebServiceManager;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -30,7 +30,7 @@ import rx.functions.Action1;
 /**
  * Displays the weather
  */
-public class WeatherFragment extends Fragment implements WeatherContract.View {
+public class WeatherFragment extends Fragment implements WeatherContract.View, IOnBackPressed {
 
     public static final String TAG = "WeatherFragment";
 
@@ -153,5 +153,10 @@ public class WeatherFragment extends Fragment implements WeatherContract.View {
     @OnClick(R.id.btn_get_weather)
     protected void onGetWeatherButtonClicked() {
         presenter.getWeather(bEditZipCode.getText().toString());
+    }
+
+    @Override
+    public void onBackPressed() {
+        presenter.onBackPressed(getActivity());
     }
 }

@@ -23,6 +23,7 @@ public class WebServiceManager {
     public WebServiceManager() {
         final Gson gson = new GsonBuilder()
                 .registerTypeAdapter(WeatherResponse.class, new WeatherDeserializer())
+                .registerTypeAdapter(ForecastResponse.class, new ForecastDeserializer())
                 .create();
 
         final Retrofit retrofit = new Retrofit.Builder()

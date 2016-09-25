@@ -39,7 +39,7 @@ public class ForecastDialog extends DialogFragment {
         final ForecastDialog dialog = new ForecastDialog();
         dialog.setArguments(args);
 
-        return new ForecastDialog();
+        return dialog;
     }
 
     @NonNull
@@ -74,6 +74,7 @@ public class ForecastDialog extends DialogFragment {
     }
 
     private void setForecastCity() {
+        final Bundle args = getArguments();
         final String city = getArguments().getString(ARG_CITY);
         bEditForecastCity.setText(city);
     }

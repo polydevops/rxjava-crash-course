@@ -14,7 +14,7 @@ public interface IWeatherApi {
 
     String ENDPOINT = "http://api.openweathermap.org/data/2.5/";
     String PATH_WEATHER = "weather";
-    String PATH_FORECAST = "forecast";
+    String PATH_FORECAST = "forecast/daily";
 
     String QUERY_CITY = "q";
     String QUERY_UNITS = "units";

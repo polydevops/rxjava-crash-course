@@ -5,6 +5,7 @@ package com.polydevops.rxjavacrashcourse.view;
  */
 public interface IToolbar {
 
+    void displayBackNav(boolean enabled);
     void setToolbarTitle(final int titleResId);
     void setToolbarTitle(final String title);
 
