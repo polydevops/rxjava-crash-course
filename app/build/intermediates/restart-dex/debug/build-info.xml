@@ -4,33 +4,40 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="22525529568287"
+    timestamp="1612607762942"
     token="-5515180643433342387"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="3360" />
+        duration="1081" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1319" />
+        duration="33" />
     <task
         name="verifier"
-        duration="158" />
+        duration="4" />
 
     <artifact
-        location="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="22525529568287"
+        timestamp="763387690947"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="1612607762942"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

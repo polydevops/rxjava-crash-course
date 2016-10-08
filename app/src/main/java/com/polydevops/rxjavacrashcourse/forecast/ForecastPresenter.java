@@ -9,7 +9,10 @@ import com.polydevops.rxjavacrashcourse.model.forecast.ForecastWeather;
 import com.polydevops.rxjavacrashcourse.router.FrontController;
 import com.polydevops.rxjavacrashcourse.rx.AbstractRxPresenter;
 
+import org.joda.time.Instant;
+
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import rx.Observable;
 import rx.Subscriber;
@@ -88,7 +91,7 @@ public class ForecastPresenter extends AbstractRxPresenter implements ForecastCo
                 .flatMap(new Func1<List<ForecastWeather>, Observable<List<ForecastWeather>>>() {
                     @Override
                     public Observable<List<ForecastWeather>> call(List<ForecastWeather> forecast) {
-                        if (forecast != null && !forecast.isEmpty()) {
+                        if (forecast != null && !forecast.isEmpty() && isUpToDate(forecast.get(0))) {
                             return Observable.just(forecast);
                         } else {
                             return interactor.getCurrentForecast(city);
@@ -111,6 +114,7 @@ public class ForecastPresenter extends AbstractRxPresenter implements ForecastCo
                     public void onNext(List<ForecastWeather> forecast) {
                         if (forecast != null) {
                             final ForecastAdapter adapter = new ForecastAdapter(forecast);
+                            view.setForecastLocation(interactor.getSavedForecastCity());
                             view.setForecastRecyclerAdapter(adapter);
                             cacheForecastData(forecast);
                         } else {
@@ -162,6 +166,15 @@ public class ForecastPresenter extends AbstractRxPresenter implements ForecastCo
                 });
 
         getCompositeSubscription().add(subscription);
+    }
+
+    private boolean isUpToDate(final ForecastWeather forecastWeather) {
+        final long elapsedTime = Instant.now().getMillis() * 1000 - forecastWeather.getDate();
+        if (elapsedTime / TimeUnit.DAYS.toMillis(1) > 7) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
 }

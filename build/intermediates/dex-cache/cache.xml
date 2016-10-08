@@ -142,7 +142,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="7b287f4dd736e7dcb0d34e41da2ff4721d3f1a7c">
+        sha1="80d3fcf10c3bb82a32fbac4c7e2050e284f16588">
         <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_26e723c2867ccdda3f75e5b57e77e23eb40d3868/classes.dex" />
     </item>
     <item
@@ -205,7 +205,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="3f32cc9e44688255f9fb9aeee6e29a39203fb60c">
+        sha1="a424dd63a06cce1a5104b45f6eb0a3f9f8589dc6">
         <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_748dc5f1670aa7092f9c378459d53e38f52b79ca/classes.dex" />
     </item>
     <item
