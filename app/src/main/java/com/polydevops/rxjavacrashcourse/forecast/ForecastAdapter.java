@@ -19,7 +19,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * TODO: Add class header comment.
+ * Adapter to display the forecast
  */
 public class ForecastAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 

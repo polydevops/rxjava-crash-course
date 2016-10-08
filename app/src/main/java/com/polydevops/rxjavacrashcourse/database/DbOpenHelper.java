@@ -5,7 +5,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * TODO: Add class header comment.
+ * Impl of SQLiteOpenHelper for sample app
+ *
+ * Responsible for creation of table 'forecast'
  */
 public class DbOpenHelper extends SQLiteOpenHelper {
 

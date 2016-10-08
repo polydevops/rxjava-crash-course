@@ -8,7 +8,7 @@ import retrofit2.http.Query;
 import rx.Observable;
 
 /**
- * TODO: Add class header comment.
+ * Retrofit interface fo rinteracting with openweathermap API
  */
 public interface IWeatherApi {
 

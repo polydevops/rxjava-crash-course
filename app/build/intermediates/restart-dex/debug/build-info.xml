@@ -1,38 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="19"
-    density="xhdpi"
-    format="7"
-    timestamp="14473602888709"
-    token="-9093386170470663642" >
+    api-level="23"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.0"
+    timestamp="22525529568287"
+    token="-5515180643433342387"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="3360" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="1319" />
     <task
         name="verifier"
-        duration="0" />
+        duration="158" />
 
     <artifact
-        location="/Users/uhth/dev/android/code/rxjava-crash-course/app/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
+        location="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="14314673833905" >
+    <build
+        timestamp="22525529568287"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/uhth/dev/android/code/rxjava-crash-course/app/build/outputs/apk/app-debug.apk"
+            location="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="14473602888709" >
-        <artifact
-            location="/Users/uhth/dev/android/code/rxjava-crash-course/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

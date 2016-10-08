@@ -17,7 +17,7 @@ import java.lang.Override;
 public class WeatherFragment_ViewBinding<T extends WeatherFragment> implements Unbinder {
   protected T target;
 
-  private View view2131492986;
+  private View view2131492990;
 
   @UiThread
   public WeatherFragment_ViewBinding(final T target, View source) {
@@ -27,7 +27,7 @@ public class WeatherFragment_ViewBinding<T extends WeatherFragment> implements U
     target.bEditZipCode = Utils.findRequiredViewAsType(source, R.id.edit_city, "field 'bEditZipCode'", EditText.class);
     view = Utils.findRequiredView(source, R.id.btn_get_weather, "field 'bBtnGetWeather' and method 'onGetWeatherButtonClicked'");
     target.bBtnGetWeather = Utils.castView(view, R.id.btn_get_weather, "field 'bBtnGetWeather'", Button.class);
-    view2131492986 = view;
+    view2131492990 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,8 +53,8 @@ public class WeatherFragment_ViewBinding<T extends WeatherFragment> implements U
     target.bTextDescription = null;
     target.bTextHumidity = null;
 
-    view2131492986.setOnClickListener(null);
-    view2131492986 = null;
+    view2131492990.setOnClickListener(null);
+    view2131492990 = null;
 
     this.target = null;
   }

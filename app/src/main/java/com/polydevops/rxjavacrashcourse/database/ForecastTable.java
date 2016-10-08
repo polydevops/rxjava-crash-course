@@ -3,7 +3,7 @@ package com.polydevops.rxjavacrashcourse.database;
 import android.provider.BaseColumns;
 
 /**
- * TODO: Add class header comment.
+ * Describes the forecast table
  */
 public class ForecastTable implements BaseColumns {
 

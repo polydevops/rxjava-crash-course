@@ -15,7 +15,7 @@ import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 /**
- * TODO: Add class header comment.
+ * Provides methods for interacting with the forecast cache and forecast API
  */
 public class ForecastInteractor implements ForecastContract.Interactor {
 
@@ -34,25 +34,29 @@ public class ForecastInteractor implements ForecastContract.Interactor {
     }
 
     @Override
-    public Observable<List<ForecastWeather>> getCurrentWeatherForecast(String city) {
+    public Observable<List<ForecastWeather>> getCurrentForecast(String city) {
         return webServiceManager.getForecast(city)
                 .map(new Func1<ForecastResponse, List<ForecastWeather>>() {
                     @Override
                     public List<ForecastWeather> call(ForecastResponse forecastResponse) {
-                        return (forecastResponse != null) ? forecastResponse.getForecast() : null;
+                        if (forecastResponse != null && forecastResponse.getCode() == 200) {
+                            return forecastResponse.getForecast();
+                        } else {
+                            return null;
+                        }
                     }
                 });
     }
 
     @Override
-    public Observable<Integer> saveWeatherForecast(ForecastResponse forecast) {
-        return forecastDAO.saveForecastCache(forecast.getForecast())
+    public Observable<Integer> saveForecastCache(List<ForecastWeather> forecast) {
+        return forecastDAO.saveForecastCache(forecast)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());
     }
 
     @Override
-    public Observable<List<ForecastWeather>> getCachedWeatherForecast() {
+    public Observable<List<ForecastWeather>> getForecastCache() {
         return forecastDAO.getForecastCache()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());

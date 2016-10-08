@@ -5,7 +5,6 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
 
 import com.polydevops.rxjavacrashcourse.R;
-import com.polydevops.rxjavacrashcourse.model.forecast.ForecastResponse;
 import com.polydevops.rxjavacrashcourse.model.forecast.ForecastWeather;
 import com.polydevops.rxjavacrashcourse.router.FrontController;
 import com.polydevops.rxjavacrashcourse.rx.AbstractRxPresenter;
@@ -21,7 +20,9 @@ import rx.functions.Func1;
 import static com.polydevops.rxjavacrashcourse.R.string.forecast;
 
 /**
- * TODO: Add class header comment.
+ * Presenter for the ForecastFragment
+ *
+ * Provides the 'business logic' associate with the view/fragment
  */
 public class ForecastPresenter extends AbstractRxPresenter implements ForecastContract.Presenter {
 
@@ -67,8 +68,17 @@ public class ForecastPresenter extends AbstractRxPresenter implements ForecastCo
         getForecastDataForCity(city);
     }
 
+    /**
+     * Retrieves the forecast data for a city using RxJava
+     *
+     * When the .subscribe() is called, a loading dialog will be displayed while the forecast is retrieved -
+     * once the forecast is retrieved, it is set into an adapter which is then given to the view
+     * to display, and the data is cached. Finally, the loading dialog will be dismissed.
+     *
+     * @param city - the city for which to retrieve the forecast
+     */
     private void getForecastDataForCity(@NonNull final String city) {
-        final Subscription subscription = interactor.getCachedWeatherForecast()
+        final Subscription subscription = interactor.getForecastCache()
                 .doOnSubscribe(new Action0() {
                     @Override
                     public void call() {
@@ -81,7 +91,7 @@ public class ForecastPresenter extends AbstractRxPresenter implements ForecastCo
                         if (forecast != null && !forecast.isEmpty()) {
                             return Observable.just(forecast);
                         } else {
-                            return getCurrentWeatherFromService(city);
+                            return interactor.getCurrentForecast(city);
                         }
                     }
                 })
@@ -103,36 +113,8 @@ public class ForecastPresenter extends AbstractRxPresenter implements ForecastCo
                             final ForecastAdapter adapter = new ForecastAdapter(forecast);
                             view.setForecastRecyclerAdapter(adapter);
                             cacheForecastData(forecast);
-                        }
-                    }
-                });
-
-        getCompositeSubscription().add(subscription);
-    }
-
-    private void refreshForecastData(final String city) {
-        final Subscription subscription = interactor.getCurrentWeatherForecast(city)
-                .subscribe(new Subscriber<ForecastResponse>() {
-                    @Override
-                    public void onCompleted() {
-
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-                        e.printStackTrace();
-                    }
-
-                    @Override
-                    public void onNext(ForecastResponse forecastResponse) {
-                        if (forecastResponse != null && forecastResponse.getCode() == 200) {
-                            final List<ForecastWeather> forecast = forecastResponse.getForecast();
-                            final ForecastAdapter adapter = new ForecastAdapter(forecast);
-                            view.setForecastRecyclerAdapter(adapter);
-
-                            cacheForecastData(forecastResponse);
                         } else {
-                            view.setForecastRecyclerAdapter(new ForecastAdapter());
+                            view.setForecastLocation(view.getString(R.string.could_not_retrieve_data));
                         }
                     }
                 });
@@ -140,13 +122,21 @@ public class ForecastPresenter extends AbstractRxPresenter implements ForecastCo
         getCompositeSubscription().add(subscription);
     }
 
-    private Observable<>
+    /**
+     * Saves or 'caches' the forecast data into a database using RxJava
+     *
+     * First, we delete everything from the cache.
+     * Next, we save the forecast data into the cache.
+     * Finally, we display a snackbar displaying success or failure for saving the forecast.
+     *
+     * @param forecast - List of ForecastWeather data objects
+     */
     private void cacheForecastData(final List<ForecastWeather> forecast) {
         final Subscription subscription = interactor.deleteForecastCache()
                 .flatMap(new Func1<Integer, Observable<Integer>>() {
                     @Override
                     public Observable<Integer> call(Integer integer) {
-                        return interactor.saveWeatherForecast(forecast);
+                        return interactor.saveForecastCache(forecast);
                     }
                 })
                 .subscribe(new Subscriber<Integer>() {

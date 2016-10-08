@@ -17,7 +17,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * TODO: Add class header comment.
+ * Allows user to specify a city to see the forecast for.
  */
 public class ForecastDialog extends DialogFragment {
 
@@ -53,6 +53,7 @@ public class ForecastDialog extends DialogFragment {
         setForecastCity();
 
         builder
+                .setTitle(R.string.set_forecast_city)
                 .setView(view)
                 .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                     @Override

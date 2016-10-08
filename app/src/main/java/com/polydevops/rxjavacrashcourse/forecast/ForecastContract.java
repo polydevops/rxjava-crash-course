@@ -2,7 +2,6 @@ package com.polydevops.rxjavacrashcourse.forecast;
 
 import android.support.v4.app.FragmentActivity;
 
-import com.polydevops.rxjavacrashcourse.model.forecast.ForecastResponse;
 import com.polydevops.rxjavacrashcourse.model.forecast.ForecastWeather;
 import com.polydevops.rxjavacrashcourse.rx.IRxPresenter;
 import com.polydevops.rxjavacrashcourse.view.IToolbar;
@@ -12,12 +11,13 @@ import java.util.List;
 import rx.Observable;
 
 /**
- * TODO: Add class header comment.
+ * The contract for the forecast screen view, presenter, and interactor
  */
 public interface ForecastContract {
 
     interface View {
         IToolbar getToolbar();
+        String getString(int stringResId);
 
         void setForecastRecyclerAdapter(ForecastAdapter adapter);
         void setForecastLocation(final String location);
@@ -38,10 +38,10 @@ public interface ForecastContract {
     }
 
     interface Interactor {
-        Observable<List<ForecastWeather>> getCurrentWeatherForecast(String city);
+        Observable<List<ForecastWeather>> getCurrentForecast(String city);
 
-        Observable<Integer> saveWeatherForecast(ForecastResponse forecast);
-        Observable<List<ForecastWeather>> getCachedWeatherForecast();
+        Observable<Integer> saveForecastCache(List<ForecastWeather> forecast);
+        Observable<List<ForecastWeather>> getForecastCache();
         Observable<Integer> deleteForecastCache();
 
         String getSavedForecastCity();

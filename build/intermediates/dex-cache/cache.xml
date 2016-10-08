@@ -1,2 +1,284 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.0_ae89843807e721b622b865dbdb396be93739331e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.0_056f1146e85af2e666815be465532f28cfc76902/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_295959637213267b43b9b21899a31e1428a271ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_b283f41ad553ffd31efba0d66f7e80be50363a10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.0_2001b6ee7b3b98699478768e8d84cb7c48788454/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.1.0/693eddc23e87ab13f9cf5001707ce8e7e1d1ff01/adapter-rxjava-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/adapter-rxjava-2.1.0_e97c2a55656977a7a0d326bb8e252dbda12ac148/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.6/2586312cd2b8a511e4c6236736f5a039fc0f2273/rxjava-1.1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2586312cd2b8a511e4c6236736f5a039fc0f2273">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/rxjava-1.1.6_16dbfead5d792ee8b0ba557a31f4c8672e74c544/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.0_e4bcc6aa04c6931209fa7b214e5eab52f5631f76/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_8465652dc7d78f6ffe5a08ba63361645409a9d87/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.jakewharton.rxbinding/rxbinding/0.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ffc09f4e5bdebe068e5101f587dadc42b60fbfe4">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton.rxbinding-rxbinding-0.4.0_499d64c1239691d7acc291dc3cfeced27134eb5f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_c3362afdcfa0fe36fc021ef6fd0c85dec3abbaa9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton-butterknife-8.4.0_6cdfbfedda8fd4e95d969e1de914fb01c9bd1437/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.0_413d40d19e0803853b1f1949420187ce91409cd2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/io.reactivex-rxandroid-1.2.1_b8b88c024755c01333e433e11d43dc4806cbaebd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_07ab8f32d54c5094a222e1ec174f3d20ad21c7d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7b287f4dd736e7dcb0d34e41da2ff4721d3f1a7c">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_26e723c2867ccdda3f75e5b57e77e23eb40d3868/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_56ec8e35e66fbf48d5a0a0348fc8092eaabdf2c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.0_98835acd41df756eb5d8b517fec684bbecc6a66d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.4.0_9a55a80e777c0d7e4ced3803369d2afcc2d0e05b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.0_84a364739f25f214983fdba03fac500995e3c513/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_ef7626ab52493b84e5fe385b64197ffcb198bb67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.0_7929ed18d25637bba7da19f1ab71f10bb4e4ef71/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3f32cc9e44688255f9fb9aeee6e29a39203fb60c">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_748dc5f1670aa7092f9c378459d53e38f52b79ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.0_20f2b8501e372082883ecb4ab5ed14a4fbbb72c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_ff92576c8026cbb2d3505e891a2aeb08a123755f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.0_3978bcf1eb1751b92070f91e79af30dfa4a5ec33/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.0_27df53e1ce958720c432b0092a9fce2300e2f996/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_797f39c253f0a1ea2b94bb4f78f4dedc24d0e682/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_036910fd7af081e1c3ba273c5fdb458564721603/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.0_356f8ea5090e68b936d340e8668ef17bbcf418e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/connor/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.4/1c295b462f16702ebe720bbb08f62e1ba80da41b/joda-time-2.9.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1c295b462f16702ebe720bbb08f62e1ba80da41b">
+        <dex dex="/Users/connor/dev/android/dcc/rxjava-crash-course/app/build/intermediates/transforms/dex/debug/folders/1000/10/joda-time-2.9.4_5aca7eb9ffe6d21d29abc296acbf796c4d39b87d/classes.dex" />
+    </item>
+
+</items>

@@ -15,7 +15,7 @@ import rx.Observable;
 import rx.functions.Func1;
 
 /**
- * TODO: Add class header comment.
+ * DAO (data access object) for managing a forecast cache
  */
 
 public class ForecastDAO {

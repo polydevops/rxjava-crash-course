@@ -12,7 +12,7 @@ import com.polydevops.rxjavacrashcourse.model.forecast.ForecastResponse;
 import java.lang.reflect.Type;
 
 /**
- * TODO: Add class header comment.
+ * Deserializes a forecast JSON object from openweathermap API
  */
 
 public class ForecastDeserializer implements JsonDeserializer<ForecastResponse> {

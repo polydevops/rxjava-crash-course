@@ -28,7 +28,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Displays a 7 day forecast for a specified city.
  */
 public class ForecastFragment extends Fragment implements ForecastContract.View, IOnBackPressed {
 

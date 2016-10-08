@@ -6,7 +6,7 @@ import com.polydevops.rxjavacrashcourse.webService.WebServiceManager;
 import rx.Observable;
 
 /**
- * TODO: Add class header comment.
+ * Provides methods for the weather API
  */
 public class WeatherInteractor implements WeatherContract.Interactor {
 

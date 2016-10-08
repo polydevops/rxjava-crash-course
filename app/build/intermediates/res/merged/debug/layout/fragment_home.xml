@@ -13,4 +13,12 @@
         android:paddingBottom="16dp"
         android:text="@string/weather"/>
 
+    <Button
+        style="@style/ExampleButton"
+        android:id="@+id/btn_forecast_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="@string/forecast" />
+
 </LinearLayout>
